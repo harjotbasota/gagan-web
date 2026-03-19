@@ -1,0 +1,11 @@
+window.__APP_CONFIG__ = {
+  siteName: "${SITE_NAME}",
+  siteTagline: "${SITE_TAGLINE}",
+  siteDescription: "${SITE_DESCRIPTION}",
+  ownerEmail: "${OWNER_EMAIL}",
+  contactFormAction: "${CONTACT_FORM_ACTION}",
+  primaryPhone: "${PRIMARY_PHONE}",
+  whatsappUrl: "${WHATSAPP_URL}",
+  metaKeywords: "${META_KEYWORDS}",
+  metaOgImage: "${META_OG_IMAGE}"
+};

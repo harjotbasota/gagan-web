@@ -1,0 +1,15 @@
+{
+  "name": "gagandeep-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/generate-photo-manifest.mjs",
+    "build": "vite build",
+    "predev": "node scripts/inject-config.mjs",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
