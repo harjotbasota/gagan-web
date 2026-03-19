@@ -9,15 +9,17 @@ const outDir = path.join(root, "public");
 const outPath = path.join(outDir, "config.js");
 
 const DEFAULTS = {
-  SITE_NAME: "Gagandeep Web",
-  SITE_TAGLINE: "Reliable rides. Anytime. Anywhere.",
+  SITE_NAME: "CTY TRANSPORTATION",
+  SITE_TAGLINE: "Business-class NYC airport & luxury chauffeured service",
   SITE_DESCRIPTION:
-    "Professional transportation with comfort, safety, and style.",
+    "CTY Transportation serves Mississauga and the greater NYC metro: business-class airport transfers, VVIP limos, black SUVs, hourly chauffeurs, family vans, and luxury vans for large groups.",
+  OWNER_NAME: "Manvir Kaur",
   OWNER_EMAIL: "hello@example.com",
   CONTACT_FORM_ACTION: "https://formspree.io/f/REPLACE_ME",
-  PRIMARY_PHONE: "+1 (555) 000-0000",
+  PRIMARY_PHONE: "(929) 390-5862",
   WHATSAPP_URL: "",
-  META_KEYWORDS: "limo, taxi, airport transfer, chauffeur",
+  META_KEYWORDS:
+    "CTY Transportation, Mississauga limo, NYC airport car service, black SUV, luxury van, VVIP limo, hourly chauffeur",
   META_OG_IMAGE: "",
 };
 
@@ -47,6 +49,7 @@ function buildConfig(env) {
     siteName: g("SITE_NAME"),
     siteTagline: g("SITE_TAGLINE"),
     siteDescription: g("SITE_DESCRIPTION"),
+    ownerName: g("OWNER_NAME"),
     ownerEmail: g("OWNER_EMAIL"),
     contactFormAction: g("CONTACT_FORM_ACTION"),
     primaryPhone: g("PRIMARY_PHONE"),

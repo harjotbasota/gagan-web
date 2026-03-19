@@ -2,6 +2,7 @@ window.__APP_CONFIG__ = {
   siteName: "${SITE_NAME}",
   siteTagline: "${SITE_TAGLINE}",
   siteDescription: "${SITE_DESCRIPTION}",
+  ownerName: "${OWNER_NAME}",
   ownerEmail: "${OWNER_EMAIL}",
   contactFormAction: "${CONTACT_FORM_ACTION}",
   primaryPhone: "${PRIMARY_PHONE}",

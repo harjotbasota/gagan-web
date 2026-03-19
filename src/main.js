@@ -3,13 +3,14 @@ import "./style.css";
 function cfg() {
   return (
     window.__APP_CONFIG__ || {
-      siteName: "Gagandeep Web",
-      siteTagline: "Reliable rides. Anytime. Anywhere.",
+      siteName: "CTY TRANSPORTATION",
+      siteTagline: "Business-class NYC airport & luxury chauffeured service",
       siteDescription:
-        "Professional transportation with comfort, safety, and style.",
+        "CTY Transportation serves Mississauga and the greater NYC metro: business-class airport transfers, VVIP limos, black SUVs, hourly chauffeurs, family vans, and luxury vans for large groups.",
+      ownerName: "Manvir Kaur",
       ownerEmail: "",
       contactFormAction: "",
-      primaryPhone: "",
+      primaryPhone: "(929) 390-5862",
       whatsappUrl: "",
       metaKeywords: "",
       metaOgImage: "",
@@ -59,7 +60,7 @@ const FAQ = [
   },
   {
     q: "What vehicles do you offer?",
-    a: "Sedans, SUVs, executive cars, and stretch options—clean, maintained, and driven by pros.",
+    a: "NYC airport business-class sedans and SUVs, VVIP limousines, black SUVs for business travel, hourly chauffeur service, luxury vans for families, and larger luxury vans for big groups—all meticulously maintained.",
   },
   {
     q: "How do I reach the driver?",
@@ -94,6 +95,10 @@ function applyText() {
   });
   const ft = document.querySelector("[data-footer-tagline]");
   if (ft) ft.textContent = c.siteTagline;
+
+  document.querySelectorAll("[data-owner-name]").forEach((el) => {
+    if (c.ownerName) el.textContent = c.ownerName;
+  });
 
   const heroTitle = document.querySelector("[data-hero-title]");
   if (heroTitle) heroTitle.textContent = c.siteTagline;

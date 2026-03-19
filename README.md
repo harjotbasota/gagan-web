@@ -1,6 +1,6 @@
 # gagan-web
 
-Static limo / transport landing (Gagandeep Web).
+Static site for **CTY Transportation** (Mississauga / NYC metro limo and airport service).
 
 Single **Docker image** (nginx + static files): good for **Cloud Run** as one service. The contact form posts **directly** to a hosted form API—no second container.
 
@@ -13,7 +13,7 @@ The app uses `fetch()` to POST `multipart/form-data` to `CONTACT_FORM_ACTION`, w
 - [Formspree](https://formspree.io): create a form, set `CONTACT_FORM_ACTION=https://formspree.io/f/<your-id>`, confirm your email in their dashboard.
 - Alternatives with similar browser POST models: [Getform](https://getform.io), [FormSubmit](https://formsubmit.co) (configure to match field names if required).
 
-All branding and endpoints are driven from environment variables (see `.env.example`).
+Branding (company name, tagline, **owner name**, phone, etc.) and form endpoints are driven from environment variables (see `.env.example`).
 
 ## Local development
 
@@ -50,7 +50,7 @@ gcloud run deploy gagandeep-web \
   --platform managed \
   --region REGION \
   --allow-unauthenticated \
-  --set-env-vars "SITE_NAME=Gagandeep Web,SITE_TAGLINE=...,CONTACT_FORM_ACTION=https://formspree.io/f/xxx,..."
+  --set-env-vars "SITE_NAME=CTY TRANSPORTATION,OWNER_NAME=Manvir Kaur,PRIMARY_PHONE=(929) 390-5862,SITE_TAGLINE=...,CONTACT_FORM_ACTION=https://formspree.io/f/xxx,..."
 ```
 
 Use commas between vars; escape or use `--env-vars-file` for complex values.
